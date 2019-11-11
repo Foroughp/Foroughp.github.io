@@ -377,6 +377,11 @@ a img.aligncenter {
 	font-size: 62px;
 	text-transform: uppercase;
 }
+.heading h2{
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 30px;
+}
 .heading p{
 	font-size: 18px;
 	padding: 20px 0px;
