@@ -1,0 +1,221 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[left=0.72in,right=0.72in,top=0.58in,bottom=0.62in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\usepackage{needspace}
+\usepackage[colorlinks=true,urlcolor=accentblue,linkcolor=accentblue]{hyperref}
+
+\definecolor{navy}{HTML}{000000}
+\definecolor{accentblue}{HTML}{000000}
+\definecolor{muted}{HTML}{000000}
+\definecolor{rulegray}{HTML}{000000}
+\definecolor{bodytext}{HTML}{000000}
+
+\renewcommand{\familydefault}{\sfdefault}
+\color{bodytext}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{2em}
+\setlength{\tabcolsep}{0pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[L]{\scriptsize\color{muted}Forough Poursabzi-Sangdeh}
+\fancyfoot[R]{\scriptsize\color{muted}Page \thepage}
+
+\newcommand{\cvsection}[1]{%
+  \vspace{1.25em}%
+  {\large\bfseries\color{navy}\MakeUppercase{#1}}\par
+  \vspace{0.16em}%
+  {\color{accentblue}\rule{\textwidth}{1.1pt}}\par
+  \vspace{0.55em}%
+}
+
+\newcommand{\datedentry}[4]{%
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{\color{navy}#1} & \textbf{\color{muted}#2} \\
+    \textit{#3} & \textit{\color{muted}#4}
+  \end{tabularx}\par
+}
+
+\newcommand{\roleline}[2]{%
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textit{#1} & \textit{\color{muted}#2}
+  \end{tabularx}\par
+}
+
+\newcommand{\educationentry}[4]{%
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{\color{navy}#1} & \textbf{\color{muted}#2} \\
+    #3 & \color{muted}#4
+  \end{tabularx}\par
+}
+
+\newcommand{\detail}[1]{%
+  {\color{muted}#1}\par
+}
+
+\newcommand{\publication}[3]{%
+  \Needspace{5\baselineskip}%
+  \begingroup
+  \setlength{\parindent}{0pt}%
+  \setlength{\hangindent}{1.1em}%
+  \setlength{\hangafter}{1}%
+  #1. \textbf{#2}. \emph{#3}.\par
+  \endgroup
+  \vspace{0.7em}%
+}
+
+\begin{document}
+
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+  {\fontsize{25}{29}\selectfont\bfseries\color{navy}Forough Poursabzi-Sangdeh} &
+  \begin{tabular}[t]{r}
+    \href{mailto:fpoursabzi@microsoft.com}{fpoursabzi@microsoft.com} \\
+    \url{https://foroughp.github.io}
+  \end{tabular}
+\end{tabularx}
+
+\vspace{0.45em}
+{\color{accentblue}\rule{\textwidth}{2pt}}
+
+\vspace{1.15em}
+
+I am a Principal Applied Scientist at Microsoft with experience leading AI safety initiatives that translate emerging risks into practical policy and design guidance. I led responsible AI red teaming for several frontier models using a multi-stakeholder, interdisciplinary approach that brought together experts from product, policy, and several fields of research, helping to expand red teaming beyond traditional security testing to address broader responsible AI and societal risks and to establish practical guidelines for doing so. I currently co-lead a cross-company initiative on the psychological influences of conversational AI, bringing together research, product, and policy perspectives to safeguard user wellbeing and promote healthy human--AI interaction.
+
+\cvsection{Employment}
+
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+  \textbf{\color{navy}Microsoft} & \textbf{\color{muted}New York, NY}
+\end{tabularx}\par
+\roleline{Principal Applied Scientist}{April 2025--Present}
+\roleline{Principal Program Manager}{September 2024--March 2025}
+\roleline{Senior Program Manager}{July 2020--August 2024}
+\vspace{0.7em}
+\datedentry{Microsoft Research}{New York, NY}{Postdoctoral Researcher}{July 2018--July 2020}
+\vspace{0.7em}
+\datedentry{Microsoft Research}{New York, NY}{Research Intern}{June 2017--August 2017}
+\vspace{0.7em}
+\datedentry{Oracle Labs}{Burlington, MA}{Research Intern}{June 2016--August 2016}
+
+\cvsection{Education}
+
+\educationentry{University of Colorado}{Boulder, CO}{PhD in Computer Science}{2013--2018}
+\detail{Advisor: Jordan Boyd-Graber}
+\detail{Dissertation: Design and Empirical Evaluation of Interactive and Interpretable Machine Learning}
+\detail{Master of Science, Computer Science, 2013--2015}
+\vspace{0.7em}
+\educationentry{University of Tehran}{Tehran, Iran}{BE in Computer Engineering}{2008--2012}
+
+\newpage
+
+\cvsection{Publications and Preprints}
+
+\publication{Ashlee Milton, Leah Ajmani, Amy Heger, Forough Poursabzi-Sangdeh, Mihaela Vorvoreanu, and Jina Suh}
+{\href{https://arxiv.org/pdf/2608.07592}{``Always Want to Use It for Everything'': Understanding Young Adults' Perceptions of AI Dependence}}
+{AIES, 2026}
+
+\publication{Jina Suh, Mihaela Vorvoreanu, Forough Poursabzi-Sangdeh, Emily Tseng, Eugenia Kim, Luke Nicholls, James W. Pennebaker, and Eric Horvitz}
+{\href{https://arxiv.org/pdf/2607.25057}{Psychological Influences of Conversational AI: Research and Design Directions for Reducing Harm and Promoting Well-Being}}
+{arXiv, 2026}
+
+\publication{Jessica Young, Sam Vaughan, Andrew Jenks, Henrique Malvar, Christian Paquin, Paul England, Thomas Roca, Juan LaVista Ferres, Forough Poursabzi, Neil Coles, Ken Archer, and Eric Horvitz}
+{\href{https://www.microsoft.com/en-us/research/wp-content/uploads/2026/02/Media-Integrity_Authentication-Report_Microsoft_021926.pdf}{Media Integrity and Authentication: Status, Directions, and Futures}}
+{Microsoft Research Technical Report, January 2026}
+
+\publication{Kyle O'Brien, David Majercak, Xavier Fernandes, Richard Edgar, Blake Bullwinkel, Jingya Chen, Harsha Nori, Dean Carignan, Eric Horvitz, and Forough Poursabzi-Sangdeh}
+{\href{https://arxiv.org/pdf/2411.11296}{Steering Language Model Refusal with Sparse Autoencoders}}
+{arXiv, 2024}
+
+\publication{Bertie Vidgen et al., including Forough Poursabzi-Sangdeh}
+{\href{https://arxiv.org/pdf/2404.12241}{Introducing v0.5 of the AI Safety Benchmark from MLCommons}}
+{arXiv, 2024}
+
+\publication{Victor Dibia, Adam Fourney, Gagan Bansal, Forough Poursabzi-Sangdeh, Han Liu, and Saleema Amershi}
+{\href{https://arxiv.org/pdf/2210.16494.pdf}{Aligning Offline Metrics and Human Judgments of Value for Code Generation Models}}
+{Association for Computational Linguistics (ACL), 2023}
+
+\publication{Forough Poursabzi-Sangdeh, Daniel G. Goldstein, Jake M. Hofman, Jennifer Wortman Vaughan, and Hanna Wallach}
+{\href{https://arxiv.org/pdf/1802.07810.pdf}{Manipulating and Measuring Model Interpretability}}
+{CHI, 2021. A shorter version appeared at the NIPS Workshop on Transparent and Interpretable Machine Learning in Safety Critical Environments, 2017}
+
+\publication{Solon Barocas, Asia J. Biega, Margarita Boyarskaya, Kate Crawford, Hal Daum\'e III, Miroslav Dud\'ik, Benjamin Fish, Mary L. Gray, Brent Hecht, Alexandra Olteanu, Forough Poursabzi-Sangdeh, Luke Stark, Jennifer Wortman Vaughan, Hanna Wallach, and Marion Zepf}
+{\href{http://users.umiacs.umd.edu/~hal/docs/daume21covid.pdf}{Responsible Computing During COVID-19 and Beyond}}
+{Communications of the ACM (CACM), 2021}
+
+\publication{Jake M. Hofman, Daniel G. Goldstein, Siddhartha Sen, and Forough Poursabzi-Sangdeh}
+{\href{http://hyadatalab.com/IID2020/papers/IID_2020_paper_5.pdf}{Expanding the Scope of Reproducibility Research Through Data Analysis Replications}}
+{WWW Workshop on Innovative Ideas in Data Science, 2020}
+
+\publication{Forough Poursabzi-Sangdeh, Samira Samadi, Jennifer Wortman Vaughan, and Hanna Wallach}
+{\href{https://foroughp.github.io/uploads/chi20-fr.pdf}{A Human in the Loop is Not Enough: The Need for Human-Subject Experiments in Facial Recognition}}
+{CHI Workshop on Human-Centered Approaches to Fair and Responsible AI, 2020}
+
+\publication{Bran Knowles, Alison Smith-Renner, Forough Poursabzi-Sangdeh, Di Lu, and Halimat Alabi}
+{\href{http://eprints.lancs.ac.uk/124041/1/Knowles_2018_CACM_Uncertainty.pdf}{Attending to the Problem of Uncertainty in Current and Future Health Wearables}}
+{Communications of the ACM (CACM), 2018}
+
+\publication{Alison Smith, Tak Yeon Lee, Forough Poursabzi-Sangdeh, Leah Findlater, Jordan Boyd-Graber, and Niklas Elmqvist}
+{\href{http://www.aclweb.org/anthology/Q17-1001}{Evaluating Visual Representations for Topic Understanding and Their Effects on Manually Generated Labels}}
+{Transactions of the Association for Computational Linguistics (TACL), 2017}
+
+\publication{Forough Poursabzi-Sangdeh, Jordan Boyd-Graber, Leah Findlater, and Kevin Seppi}
+{\href{http://www.aclweb.org/anthology/P16-1110}{ALTO: Active Learning with Topic Overviews for Speeding Label Induction and Document Labeling}}
+{Association for Computational Linguistics (ACL), 2016. Code publicly available and now used by Snagajob}
+
+\publication{Alison Smith, Tak Yeon Lee, Forough Poursabzi-Sangdeh, Jordan Boyd-Graber, Niklas Elmqvist, Kevin Seppi, and Leah Findlater}
+{\href{http://www.doc.gold.ac.uk/~mas02mg/HCML2016/HCML2016_paper_18.pdf}{Human-Centered and Interactive: Expanding the Impact of Topic Models}}
+{CHI Workshop on Human-Centered Machine Learning, 2016}
+
+\publication{Jason Chuang, John D. Wilkerson, Rebecca Weiss, Dustin Tingley, Brandon M. Stewart, Margaret E. Roberts, Forough Poursabzi-Sangdeh, Justin Grimmer, Leah Findlater, Jordan Boyd-Graber, and Jeffrey Heer}
+{\href{https://scholar.princeton.edu/sites/default/files/bstewart/files/nipshpml2014.pdf}{Computer-Assisted Content Analysis: Topic Models for Exploring Multiple Subjective Interpretations}}
+{NIPS Workshop on Human-Propelled Machine Learning, 2014}
+
+\publication{Forough Poursabzi-Sangdeh and Ananth Kalyanaraman}
+{\href{http://www.eecs.wsu.edu/~ananth/papers/Poursabzi_SIAMNetworkScience13_preprint.pdf}{On Clustering Heterogeneous Networks}}
+{SIAM Workshop on Network Science, 2013}
+
+\publication{Forough Poursabzi-Sangdeh}
+{\href{https://scholar.colorado.edu/csci_gradetds/163/}{Design and Empirical Evaluation of Interactive and Interpretable Machine Learning}}
+{University of Colorado Boulder, 2018}
+
+\cvsection{Invited Talks}
+
+\textbf{\color{navy}Manipulating and Measuring Model Interpretability}\par
+Women in Machine Learning and Data Science (WiMLDS) Meetup, New York, May 2019\par
+O'Reilly Artificial Intelligence Conference, New York, NY, April 2019\par
+Machine Learning Conference (MLConf), San Francisco, CA, November 2018\par
+\vspace{0.7em}
+\textbf{\color{navy}Design and Empirical Evaluation of Interactive and Interpretable Machine Learning}\par
+NYU Tandon School of Engineering, New York, NY, April 2019\par
+Department of Information Science, Boulder, CO, March 2018\par
+Microsoft Research, New York, NY, March 2018\par
+Oracle Labs, Burlington, MA, March 2018
+
+\newpage
+
+\cvsection{Professional Service}
+
+\textbf{\color{navy}Reviewer and Committees}\par
+Microsoft TechFest 2020, ACL 2020, AAAI 2020, IJCAI 2019 and 2020, CSCW 2019, NeurIPS 2019 (selected as a top reviewer), NeurIPS 2019 Reproducibility Challenge, ICML 2019, ACM Transactions on Computing Education 2018, AISTATS 2018, EMNLP 2018, COLING 2018, EACL 2017, Debugging Machine Learning Models workshop at ICLR 2019, Explainable Smart Systems workshop at Intelligent User Interfaces (IUI) 2018 and 2019, AI for Social Good workshop at NeurIPS 2019, Advances in Interpretable Machine Learning and Artificial Intelligence workshop at KDD 2019, Black in AI workshop at NeurIPS 2017 and 2018\par
+\vspace{0.7em}
+\textbf{\color{navy}Workshop Organizer}\par
+Senior Program and Mentorship Chair for the Women in Machine Learning (WiML) workshop co-located with NeurIPS 2019. (Expected number of attendees: 1000.)
+
+\cvsection{Mentoring}
+
+\textbf{\color{navy}Microsoft Research Data Science Summer School Program}, 2019\par
+Research mentor for a group of eight NYC undergrad students for a research project on replication\par
+\vspace{0.7em}
+\textbf{\color{navy}Harpreet Gaur}, undergraduate student at CUNY City Tech, 2019\par
+\vspace{0.7em}
+\textbf{\color{navy}You Lu}, masters student at University of Colorado, 2016 (current position: PhD student at Virgina Tech)
+
+\end{document}
