@@ -41,13 +41,13 @@
 \newcommand{\datedentry}[4]{%
   \begin{tabularx}{\textwidth}{@{}Xr@{}}
     \textbf{\color{navy}#1} & \textbf{\color{muted}#2} \\
-    \textit{#3} & \textit{\color{muted}#4}
+    \textit{#3} & \color{muted}#4
   \end{tabularx}\par
 }
 
 \newcommand{\roleline}[2]{%
   \begin{tabularx}{\textwidth}{@{}Xr@{}}
-    \textit{#1} & \textit{\color{muted}#2}
+    \textit{#1} & \color{muted}#2
   \end{tabularx}\par
 }
 
@@ -98,10 +98,8 @@ I am a Principal Applied Scientist at Microsoft with experience leading AI safet
 \roleline{Principal Applied Scientist}{April 2025--Present}
 \roleline{Principal Program Manager}{September 2024--March 2025}
 \roleline{Senior Program Manager}{July 2020--August 2024}
-\vspace{0.7em}
-\datedentry{Microsoft Research}{New York, NY}{Postdoctoral Researcher}{July 2018--July 2020}
-\vspace{0.7em}
-\datedentry{Microsoft Research}{New York, NY}{Research Intern}{June 2017--August 2017}
+\roleline{Postdoctoral Researcher}{July 2018--June 2020}
+\roleline{Research Intern}{June 2017--August 2017}
 \vspace{0.7em}
 \datedentry{Oracle Labs}{Burlington, MA}{Research Intern}{June 2016--August 2016}
 
@@ -188,6 +186,9 @@ I am a Principal Applied Scientist at Microsoft with experience leading AI safet
 
 \cvsection{Invited Talks}
 
+\textbf{\color{navy}\href{https://www.youtube.com/watch?v=98mHmuwzkFc}{Psychological Influences of Conversational AI: Delusions, Risks, and Recommendations}}\par
+AHA Seminar, MIT Media Lab, September 2026\par
+\vspace{0.7em}
 \textbf{\color{navy}Manipulating and Measuring Model Interpretability}\par
 Women in Machine Learning and Data Science (WiMLDS) Meetup, New York, May 2019\par
 O'Reilly Artificial Intelligence Conference, New York, NY, April 2019\par
@@ -199,6 +200,7 @@ Department of Information Science, Boulder, CO, March 2018\par
 Microsoft Research, New York, NY, March 2018\par
 Oracle Labs, Burlington, MA, March 2018
 
+\iffalse
 \newpage
 
 \cvsection{Professional Service}
@@ -217,5 +219,6 @@ Research mentor for a group of eight NYC undergrad students for a research proje
 \textbf{\color{navy}Harpreet Gaur}, undergraduate student at CUNY City Tech, 2019\par
 \vspace{0.7em}
 \textbf{\color{navy}You Lu}, masters student at University of Colorado, 2016 (current position: PhD student at Virgina Tech)
+\fi
 
 \end{document}
