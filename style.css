@@ -304,7 +304,7 @@ a img.aligncenter {
 -------------------------------------------------------------------*/
 
 .navbar-dark{
-	
+	background-color: #132238;
 }
 
 .navbar-dark .navbar-nav .nav-link{
@@ -344,51 +344,77 @@ a img.aligncenter {
 -------------------------------------------------------------------*/
 
 .main-banner{
-	height: 100%;
+	background-color: #f4f1eb;
+	min-height: 620px;
+	padding: 135px 0 80px;
 	position: relative;
+    width: 100%;
 }
 
-.main-banner{
-	display: table;
-    width: 100%;
-	text-align: center;
+.hero-container {
+	display: flex;
+	min-height: 405px;
+	align-items: center;
 }
-.main-banner::after {
-    content: " ";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #000;
-    z-index: 0;
-    opacity: .3;
+
+.hero-container > .row {
+	width: 100%;
 }
+
 .heading{
-	color: #fff;
-	display: table-cell;
-	vertical-align: middle;
-	position: relative;
-	z-index: 1;
+	color: #3f4b59;
+	max-width: 760px;
 }
+
 .heading h1{
-	color: #ffffff;
+	color: #132238;
 	font-weight: 700;
-	font-size: 62px;
+	font-size: 54px;
+	letter-spacing: -1.5px;
+	margin-bottom: 16px;
+}
+
+.heading h2{
+    color: #315b78;
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 24px;
+}
+
+.heading p{
+	font-size: 19px;
+	padding: 0;
+}
+
+.heading .hero-eyebrow {
+	color: #55778e;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	margin-bottom: 14px;
 	text-transform: uppercase;
 }
-.heading h2{
-    color: #ffffff;
-    font-weight: 400;
-    font-size: 30px;
-}
-.heading p{
-	font-size: 18px;
-	padding: 20px 0px;
+
+.heading .hero-summary {
+	color: #4d5966;
+	line-height: 1.7;
+	max-width: 680px;
 }
 
-.heading h3{
-	color: ffffff;
+.hero-portrait {
+	background-color: #dce4e8;
+	border-radius: 20px;
+	box-shadow: 0 18px 45px rgba(19, 34, 56, .16);
+	margin-left: auto;
+	max-width: 290px;
+	overflow: hidden;
+}
+
+.hero-portrait img {
+	display: block;
+	height: 350px;
+	object-fit: cover;
+	width: 100%;
 }
 
 .cd-words-wrapper {
@@ -452,19 +478,7 @@ xclip
 #mainNav.navbar-shrink {
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #333333;
-}
-
-#clouds{
-	margin-top: -5%;
-	position: relative;
-	z-index: 1;
-}
-#clouds path {
-    fill: #ffffff;
-    bottom: -10px;
-    overflow: hidden;
-    stroke: #ffffff;
+    background-color: #132238;
 }
 
 .section {
@@ -2092,6 +2106,32 @@ select.mobile-device {
 
 #contact .section-title p{
 	color: #ffffff;
+}
+
+.social-profile-links {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-start;
+    margin-top: 26px;
+    width: 100%;
+}
+
+.social-profile-links a {
+    align-items: center;
+    border: 1px solid #315b78;
+    border-radius: 50%;
+    color: #315b78;
+    display: inline-flex;
+    font-size: 20px;
+    height: 44px;
+    justify-content: center;
+    width: 44px;
+}
+
+.social-profile-links a:hover,
+.social-profile-links a:focus {
+    background-color: #315b78;
+    color: #ffffff;
 }
 
 .contact_form textarea.form-control{

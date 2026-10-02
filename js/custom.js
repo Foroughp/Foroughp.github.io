@@ -75,15 +75,10 @@
 		});
 	}
 	
-	// Banner 
-	
-    $('.heading').height( $(window).height() );
-	$('.parallaxie').parallaxie();
-	
     // LOADER
-    $(window).load(function() {
-        $("#preloader").on(500).fadeOut();
-        $(".preloader").on(600).fadeOut("slow");
+    $(window).on('load', function() {
+        $("#preloader").fadeOut(500);
+        $(".preloader").fadeOut(600);
     });
 
 	// Gallery Filter

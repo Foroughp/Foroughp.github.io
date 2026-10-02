@@ -5,7 +5,7 @@
 @media only screen and (min-width: 992px) and (max-width: 1199px) {}
 @media (min-width: 768px) and (max-width: 991px) {
 	#mainNav {
-		background-color: #333333;
+		background-color: #132238;
 	}
 	.navbar-dark .navbar-brand{
 		width: 55%;
@@ -32,8 +32,15 @@
 	.section-title p{
 		font-size: 14px;
 	}
-	#clouds{
-		margin-top: -35%;
+	.main-banner {
+		min-height: auto;
+		padding: 120px 0 70px;
+	}
+	.hero-container {
+		min-height: auto;
+	}
+	.hero-portrait {
+		margin: 40px auto 0;
 	}
 	.message-box{
 		margin-bottom: 30px;
@@ -53,7 +60,7 @@
 }
 @media (max-width: 767px) {
 	#mainNav {
-		background-color: #333333;
+		background-color: #132238;
 	}
 	.navbar-dark .navbar-brand{
 		width: 55%;
@@ -80,8 +87,33 @@
 	.section-title p{
 		font-size: 14px;
 	}
-	#clouds{
-		margin-top: -35%;
+	.main-banner {
+		min-height: auto;
+		padding: 110px 0 60px;
+		text-align: center;
+	}
+	.hero-container {
+		display: block;
+		min-height: auto;
+	}
+	.heading {
+		margin: 0 auto;
+	}
+	.heading h2 {
+		font-size: 21px;
+	}
+	.heading .hero-summary {
+		font-size: 16px;
+	}
+	.social-profile-links {
+		justify-content: center;
+	}
+	.hero-portrait {
+		margin: 36px auto 0;
+		max-width: 230px;
+	}
+	.hero-portrait img {
+		height: 280px;
 	}
 	.message-box{
 		margin-bottom: 30px;
@@ -101,7 +133,7 @@
 }
 @media only screen and (min-width: 280px) and (max-width: 599px) {
 	#mainNav {
-		background-color: #333333;
+		background-color: #132238;
 	}
 	.navbar-dark .navbar-brand{
 		width: 55%;
@@ -128,8 +160,14 @@
 	.section-title p{
 		font-size: 14px;
 	}
-	#clouds{
-		margin-top: -35%;
+	.main-banner {
+		padding: 100px 0 50px;
+	}
+	.hero-portrait {
+		max-width: 210px;
+	}
+	.hero-portrait img {
+		height: 255px;
 	}
 	.message-box{
 		margin-bottom: 30px;
